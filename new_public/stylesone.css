@@ -1,0 +1,279 @@
+#mayo-privacy-consent-banner {
+    border-radius: 10px;
+    background-color: #3c3a35;
+    bottom: 50px;
+    max-width: 800px;
+  }
+  #mayo-privacy-consent-banner .mayo-close-btn {
+    color: #fff;
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-privacy-consent-banner {
+      bottom: 0;
+      border-radius: 0;
+    }
+  }
+  #mayo-privacy-consent-banner > p {
+    color: #EDEDED;
+  }
+  #mayo-privacy-consent-banner > p a {
+    color: #fff;
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-privacy-consent-banner > p {
+      font-size: 13px !important;
+    }
+  }
+  #mayo-pref-popup {
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.6);
+    top: 3%;
+  }
+  #mayo-pref-popup .mayo-close-btn {
+    color: #3c3a35;
+  }
+  #mayo-pref-popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -2;
+  }
+  #mayo-pref-popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    z-index: -1;
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-pref-popup {
+      bottom: inherit;
+      top: 0;
+    }
+  }
+  #mayo-pref-popup h2 {
+    color: #a9a8a5;
+    font-size: 18px;
+    text-align: center;
+  }
+  #mayo-pref-popup p {
+    font-size: 13px;
+    padding-bottom: 10px;
+  }
+  #mayo-pref-popup .mayo-privacy-box {
+    border-top: 2px solid #a9a8a5;
+    margin: 8px 0;
+    padding: 5px 0;
+    display: flex;
+  }
+  #mayo-pref-popup .mayo-privacy-box > div {
+    margin-top: 18px;
+  }
+  #mayo-pref-popup .mayo-privacy-box > div label {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 3px 8px;
+    line-height: 24px;
+    padding: 0;
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-pref-popup .mayo-privacy-box > div label {
+      font-size: 13px !important;
+    }
+  }
+  #mayo-pref-popup .mayo-privacy-box > div label + p {
+    margin: 0 0 0 8px;
+  }
+  #mayo-pref-popup .mayo-privacy-box h3 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  #mayo-pref-popup .mayo-privacy-box.btns {
+    text-align: right;
+    padding-top: 18px;
+    margin-bottom: 0;
+  }
+  #mayo-privacy-consent-banner,
+  #mayo-pref-popup {
+    box-sizing: border-box;
+    padding: 20px 25px 20px 20px;
+    position: fixed;
+    max-width: 700px;
+    left: calc( (100% - 700px) / 2 );
+    z-index: 3000000;
+  }
+  #mayo-privacy-consent-banner .mayo-close-btn,
+  #mayo-pref-popup .mayo-close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    height: 20px;
+    width: 20px;
+  }
+  #mayo-privacy-consent-banner[aria-hidden="true"],
+  #mayo-pref-popup[aria-hidden="true"] {
+    display: none;
+  }
+  #mayo-privacy-consent-banner h3,
+  #mayo-pref-popup h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0 0 13px;
+    color: #111;
+    font-weight: bold;
+    line-height: 24px;
+    padding: 0;
+  }
+  #mayo-privacy-consent-banner h2,
+  #mayo-pref-popup h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0 0 13px;
+    color: #111;
+    line-height: 26px;
+    padding: 0;
+  }
+  #mayo-privacy-consent-banner h2.hide-title,
+  #mayo-pref-popup h2.hide-title {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #mayo-privacy-consent-banner p,
+  #mayo-pref-popup p {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    display: block;
+    line-height: 24px;
+    margin: 5px 0;
+    padding: 0;
+  }
+  #mayo-privacy-consent-banner a {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-privacy-consent-banner a {
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 13px !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-privacy-consent-banner p,
+    #mayo-pref-popup p {
+      font-size: 13px !important;
+    }
+  }
+  #mayo-privacy-consent-banner a,
+  #mayo-pref-popup a {
+    text-decoration: underline;
+  }
+  #mayo-privacy-consent-banner a:hover,
+  #mayo-pref-popup a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  #mayo-privacy-consent-banner .mayo-primary-button,
+  #mayo-pref-popup .mayo-primary-button {
+    border-radius: 14px;
+    padding: 14px 28px;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    height: auto;
+    letter-spacing: initial;
+    font-weight: normal;
+    text-transform: none
+  }
+  #mayo-privacy-consent-banner .mayo-primary-button,
+  #mayo-pref-popup .mayo-primary-button {
+    background-color: #003da5;
+    border: 1px solid #003da5;
+    color: #fff;
+  }
+  #mayo-privacy-consent-banner .mayo-primary-button:focus,
+  #mayo-pref-popup .mayo-primary-button:focus {
+    border: 1px solid #fff;
+  }
+  #mayo-privacy-consent-banner .mayo-primary-button:hover,
+  #mayo-pref-popup .mayo-primary-button:hover {
+    cursor: pointer;
+  }
+  #mayo-privacy-consent-banner .mayo-button-container,
+  #mayo-pref-popup .mayo-button-container {
+    overflow: hidden;
+    text-align: right;
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-privacy-consent-banner .mayo-button-container,
+    #mayo-pref-popup .mayo-button-container {
+      margin-top: 12px;
+      text-align: left;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-privacy-consent-banner,
+    #mayo-pref-popup {
+      width: 100%;
+      max-width: inherit;
+      left: 0;
+      -webkit-transform: inherit;
+      transform: inherit;
+      margin-left: 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    #mayo-pref-popup {
+      margin-left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  }
+  
+  .dialog-backdrop.active {
+    z-index: 3000001 !important;
+  }
+  
+  
+  html[lang="ar"] #mayo-privacy-consent-banner .mayo-button-container, html[lang="ar"] #mayo-pref-popup .mayo-button-container {
+      text-align: right;
+  }
+  
+  @media screen and (max-width: 767px) {
+      html[lang="ar"] #mayo-privacy-consent-banner .mayo-button-container, html[lang="ar"] #mayo-pref-popup .mayo-button-container {
+          text-align: left;
+      }
+  }
+  
+  html[lang="ar"] #mayo-privacy-consent-banner .mayo-close-btn, html[lang="ar"] #mayo-pref-popup .mayo-close-btn {
+      right: auto;
+      left: 8px;
+  }
+  
+  html[lang="ar"] #mayo-pref-popup .mayo-privacy-box > div label {
+      margin-left: 0;
+      margin-right: 8px;
+  }

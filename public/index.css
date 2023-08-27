@@ -1,0 +1,290 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+p,a,h1,h2,h3,h4,h5,h6,li,label,button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-decoration-color: black;
+    list-style-type: none;
+    font-weight: 600;
+}
+nav,nav>ul{
+    display: flex;
+}
+nav>ul{
+    width: 30%;
+    justify-content: space-evenly;
+}
+nav{
+    z-index: 1;
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.hamburger{
+    display: none;
+}
+.smaller-size,.smaller-size-open{
+    display: none;
+}
+button{
+    border: solid;
+    color: rgba(4, 4, 158, 0.9);
+    background-color: transparent;
+    padding: 10px;
+    font-size: large;
+}
+.inv-button{
+    color: white;
+    background-color: transparent;
+}
+button:hover,.inv-button:hover{
+    background-color: rgba(4, 4, 158, 0.9);
+    color: white;
+}
+.main>div,.send-email-sec{
+    width: 50%;
+}
+.heading{
+    color: blue;
+}
+.sections{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 7vh;
+    padding-left: 25px;
+}
+.exp{
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0) 60%), url(national-cancer-institute-82BHTkmkDfU-unsplash.jpg);
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    background-size: cover;
+}
+#exp-child>h1,#exp-child>p{
+    color: white;
+}
+.services>.heading{
+    font-size: 2.8rem;
+}
+.services,.service,.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service>p,#summary{
+    text-align: center;
+}
+.services{
+    flex-direction: column;
+    background-color: rgb(249, 250, 254);
+}
+.service-container{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+.service{
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+}
+#mailsend{
+    transform: rotate(310deg);
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+}
+#email-heading{
+    font-size: 4rem;
+}
+input,textarea{
+    border: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(222, 222, 222, 0.984);
+    width: 90%;
+}
+footer{
+    margin-top: 50px;
+    background-color: rgba(4, 4, 158, 0.9);
+    display: flex;
+    padding: 30px;
+    align-items: center;
+}
+.sep-line{
+    height: 75%;
+    width: 8px;
+    background-color: white;
+    border: hidden;
+    border-radius: 10px;
+}
+.footer-divs>.logos>.heading{
+    color: white;
+    font-size: 5rem;
+}
+.footer-divs{
+    width: 49%;
+}
+.footer-divs>p,.opts-foot,.det>p{
+    color: white;
+    font-weight: bold;
+}
+.opts-foot{
+    font-size: 1.3rem;
+}
+.det{
+    display: flex;
+    align-items: center;
+}
+#le-contact{
+    display: grid;
+    place-items: center;
+}
+#send-email-container{
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+    background-color: rgba(255, 234, 224, 0.6);
+    border: hidden;
+    border-radius: 15px;
+    padding: 50px;
+    width: 85%;
+}
+.title-blox,.title-blox-small{
+    color: white;
+    font-weight: bold;
+}
+.title-blox{
+    font-size: 2rem;
+    margin-bottom: 1px;
+}
+.title-blox-small{
+    font-size: large;
+}
+@media screen and (max-width:850px) {
+    .logos>.heading{
+        font-size: 1.2rem;
+    }
+    nav>ul{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 30px;
+        padding: 10px;
+    }
+    .hamburger-open{
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+    }
+    .hamburger-open-icon-one,.hamburger-open-icon-two,.hamburger-icon,.hamburger-icon-sm{
+        height: 4%;
+        margin: 3px;
+        padding: 1px;
+    }
+    .hamburger-icon{
+        background-color: black;
+        width: 34px;
+    }
+    .hamburger-icon-sm{
+        background-color: black;
+        width: 28px;
+    }
+    .hamburger-open-icon-one{
+        background-color: white;
+        width: 34px;
+    }
+    .hamburger-open-icon-two{
+        background-color: white;
+        width: 34px;
+    }
+    .smaller-size-open{
+        display: block;
+        position: fixed;
+        right: 0;
+        height: 100vh;
+        width: max-content;
+        background-color: rgb(4, 4, 158);
+        animation: slide 2s ease forwards;
+    }
+    .smaller-size-open>ul>a>li{
+        color: white;
+        margin: 5px;
+        padding-right: 50vw;
+        padding-bottom: 20px;
+        border-bottom: solid white thin;
+    }
+    #sendmail{
+        width: 90%;
+    }
+    button{
+        width: 85vw;
+        margin: 10px;
+    }
+    .service-container,#services,.contact-container,#send-email-container,footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .sections{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .sections>div{
+        width: 100%;
+    }
+    .service{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .exp{
+        background: linear-gradient(90deg, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.8) 60%), url(national-cancer-institute-82BHTkmkDfU-unsplash.jpg);
+        background-size: cover;
+    }
+    #mailsend{
+        display: none;
+    }
+    .send-email-sec{
+        width: 90%;
+    }
+    #send-email-container{
+        padding: 10px;
+        align-items: center;
+    }
+    #email-heading,.send-email-sec>h2{
+        text-align: center;
+    }
+    #email-heading{
+        font-size: 3rem;
+    }
+    .footer-divs{
+        width: 90%;
+    }
+    .footer-divs>.logos>.heading{
+        font-size: 3.5rem;
+    }
+}
+@keyframes slide {
+    from{
+        transform: translate(50vw);
+    }
+    to{
+        transform: translate(0);
+    }
+}

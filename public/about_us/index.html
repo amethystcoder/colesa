@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Colesa Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="before_home"></div>
+    <nav>
+        <div class="logos">
+            <span>
+                <svg width="50" height="50" viewBox="0 0 131 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 20C0 8.9543 8.95431 0 20 0H111C122.046 0 131 8.95431 131 20V38H10C4.47716 38 0 33.5228 0 28V20Z" fill="#3CFFE8"/>
+                    <rect x="18" y="52" width="113" height="90" rx="15" fill="#FFE600"/>
+                    </svg>
+            </span>
+            <h1 class="heading main">Colesa Healthcare and Diagnostics</h1>
+        </div>
+        <ul>
+            <a href="../services/">
+                <li>Services</li>
+            </a>
+            <a href="../about_us/">
+                <li>About Us</li>
+            </a>
+            <a href="#le-contact">
+                <li>Contact Us</li>
+            </a>
+        </ul>
+        <div class="hamburger" onclick="togglesidebar('open')">
+            <span class="hamburger-icon"></span>
+            <span class="hamburger-icon-sm"></span>
+        </div>
+        <div class="smaller-size" id="small">
+            <div class="hamburger-open" onclick="togglesidebar('close')">
+                <span class="hamburger-open-icon-one"></span>
+                <span class="hamburger-open-icon-two"></span>
+            </div>
+            <ul>
+                <a href="services/">
+                    <li>Services</li>
+                </a>
+                <a href="about_us/">
+                    <li>About Us</li>
+                </a>
+                <a href="#le-contact">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
+    <div id="heading-cont">
+        <span>
+            <svg width="50" height="50" viewBox="0 0 131 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 20C0 8.9543 8.95431 0 20 0H111C122.046 0 131 8.95431 131 20V38H10C4.47716 38 0 33.5228 0 28V20Z" fill="#3CFFE8"/>
+                <rect x="18" y="52" width="113" height="90" rx="15" fill="#FFE600"/>
+                </svg>
+        </span>
+        <h1>About Colesa</h1>
+    </div>
+    <div class="section-container">
+        <div class="topic-container">
+            <div class="inner-topic-container">
+                <div class="front-topic-div" id="frtopone"></div>
+                <h1 class="topics">Who we are</h1>
+            </div>
+            <div class="under-topic-div" id="undtopone"></div>
+        </div>
+        <div class="details-container">
+            <p>Colesa consists of individuals who are passionate about people's health and work to make healthcare 
+            as easy and as straightforward as possible. We take pride in our patient's health and are committed
+            to making sure they receive the best treatment.
+        </p>
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="topic-container">
+            <div class="inner-topic-container">
+                <div class="front-topic-div" id="frtoptwo"></div>
+                <h1 class="topics">What we do</h1>
+            </div>
+            <div class="under-topic-div" id="undtoptwo"></div>
+        </div>
+        <div class="details-container">
+            <p>Our Primary Objective is to provide quality healthcare and checkups for our patients. We also 
+                aim to make the process of as effortless as possible. We provide:
+            </p>
+            <div class="actv-container">
+                <div class="actv">
+                    <h1 class="actv-header">Checkups and Diagnosis</h1>
+                    <p>
+                        We provide standard and very well taken tests. We take the health of our patients very 
+                        seriously and make sure our diagnosis are correct to the best of our ability.
+                    </p>
+                </div>
+                <div class="actv">
+                    <h1 class="actv-header">Straightforward Process</h1>
+                    <p>
+                        We make the process of consultation as smooth and effortless as possible. We also encourage 
+                        future checkups and further consultations.
+                    </p>
+                </div>
+                <div class="actv">
+                    <h1 class="actv-header">Treatment</h1>
+                    <p>
+                        As already said, we take our patient's health very seriously and that also extends to treatment 
+                        Experts in the field take care of delivering the treatment needed for different illnesses
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="topic-container">
+            <div class="inner-topic-container">
+                <div class="front-topic-div" id="frtopthree"></div>
+                <h1 class="topics">Our opening hours</h1>
+            </div>
+            <div class="under-topic-div" id="undtopthree"></div>
+        </div>
+        <div class="details-container">
+            <p>We are usually available only on Thursdays and sometimes on Fridays and Satuerdays from 
+                <b>09:00 - 04:00</b>. But exceptions can be made depending on the situation.
+            </p>
+        </div>
+    </div>
+    <div class="section-container">
+        <div class="topic-container">
+            <div class="inner-topic-container">
+                <div class="front-topic-div" id="frtopfour"></div>
+                <h1 class="topics">Location and contact</h1>
+            </div>
+            <div class="under-topic-div" id="undtopfour"></div>
+        </div>
+        <div class="details-container">
+            <p>
+                Contact us on any of our networks and you can also send a message to us directly from this site.
+                Feel free to visit during our opening hours and/or contact us. 
+            </p>
+            <ul class="contact-container">
+                <li>
+                    <div class="contact-div">
+                        <svg width="96" height="96" class="icns" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_704_41)">
+                            <path d="M26.48 43.16C32.24 54.48 41.52 63.72 52.84 69.52L61.64 60.72C62.72 59.64 64.32 59.28 65.72 59.76C70.2 61.24 75.04 62.04 80 62.04C82.2 62.04 84 63.84 84 66.04V80C84 82.2 82.2 84 80 84C42.44 84 12 53.56 12 16C12 13.8 13.8 12 16 12H30C32.2 12 34 13.8 34 16C34 21 34.8 25.8 36.28 30.28C36.72 31.68 36.4 33.24 35.28 34.36L26.48 43.16Z" fill="#2457C5"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_704_41">
+                            <rect width="96" height="96" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        <p>+234 909 014 4524</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact-div">
+                        <svg width="96" height="96" class="icns" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_704_38)">
+                            <path d="M80 16H16C11.6 16 8.04 19.6 8.04 24L8 72C8 76.4 11.6 80 16 80H80C84.4 80 88 76.4 88 72V24C88 19.6 84.4 16 80 16ZM80 32L48 52L16 32V24L48 44L80 24V32Z" fill="#2457C5"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_704_38">
+                            <rect width="96" height="96" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                        <p>colesamedcenter@gmail.com</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="contact-div">
+                        <svg width="96" height="96" class="icns" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="96" height="96" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_704_45" transform="scale(0.0104167)"/>
+                            </pattern>
+                            <image id="image0_704_45" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2cy04UURCGD3h5BO8KzKkBRDfGB+Ap+tQArnkFFy7YutEYoy9BjMao0Xgf5hSDxoUJ+hJe8K7EkIxpYggZJEF6pqu6+/+S2v+XqsOwaecAAAAAAAAAoCDUzskB4jjvQ7wz1ohHtPVUCuLFxLO8I5bO+gRZ8Syz2rpKz0ijfdCz3NgIvmt8iHfryeJRbZ3l3fog77cLf9N8wjX0eOspxJs7CL577tHM0rFeaqnoWx8/7CL8vxM/4xp2wVDy4hBxvLX74LsmxPuem8d7vyLl3fqPPQt/yzV0BrQ9mmR8pnmYgtzuffBbinhQS1ontP2a23oKstL/8Dd+rn7BNTjnhqdlyAd5mFfwW4uQBZ8skqsenYF0Az3LV63wNz1JP4jlvJvrDLoqMMbtYc/xkX7w0j2t2lS77sqLpa2Xal3DaNIcoRCf6AcsOy0ijvDCqCvR1n/TD1X+t4Sf69eQzO9xRaQ+3aoRy1P9ICXbhCijUzLuCrf1IX5XD48rdg3E0XuOz/UDk76MZ2nXuX3SmWOuM1i+rZd/T5Bfpq4h/U/Sc2yqB8M5X0OQJUoWJtSCn5x8tjfdBM+yqh0GqZUQf/sQL56dfbUv1/B9o3WKOL7UDoCMjGd5TQ05k0/4HC9Ueetp+xJW02z6XoC2UTI+KIBRgPoWEi5APwjCE6TzxhIK0P0jRygABfQV6xtGxvWhAEYBuIAsWD9xMq4vM9YNknF9KIBRAC4gC9ZPnIzry4x1g2Rcn7kCnDKF81M4wWXzUzjBZfNTOMFl81M4wWXzUzjBZfNTOMFl81M4wWXz02vB1GOD1vWhAEYBuIAsWD9xMq4vM9YNknF9KIBRAC4gC9ZPnIzry4x1g2RcHwpgFIALyIL1Eyfj+jKjbZCMDwpgFKC+hYQL0A+C8ATph0EKg78BjALUt5BwAfpBUFmfoGJ+gE9y+yRyHgW81TZKZicu97+AEK/oGxWbE+RS3wuoBTlNLGvqZtncrKUfsnJ54DleN2C4Y2yuuryYSN7sL9aniKW/E+LjNJPcCthUwrWKP0dr6ebnHv5m0nfPB7mc/gKowk9Uv+4xLqeec3vzAQAAAAAAAAAAAIArA38ApE6jWd0dY1sAAAAASUVORK5CYII="/>
+                            </defs>
+                            </svg>
+                            <p>Address: 31,Soun Ajagungbade Street, Off Ladoke Akintola Avenue,New Bodija, Ibadan, Oyo State, Nigeria</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="sections main" id="le-contact">
+        <div id="send-email-container">
+            <div class="send-email-sec">
+                <h1 class="heading" id="email-heading">Get your professional healthcare now!</h1>
+                <h2>Send Us a Message and we will reply you as soon as we can</h2>
+                <svg  id="mailsend"  viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_704_38)">
+                    <path d="M80 16H16C11.6 16 8.04 19.6 8.04 24L8 72C8 76.4 11.6 80 16 80H80C84.4 80 88 76.4 88 72V24C88 19.6 84.4 16 80 16ZM80 32L48 52L16 32V24L48 44L80 24V32Z" fill="#2457C5"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_704_38">
+                    <rect width="96" height="96" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+            <div class="send-email-sec">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br><br>
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br><br>
+                <label for="text">Message</label>
+                <br>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <br>
+                <button id="sendmail" onclick="submitmail()">Send</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-divs">
+            <div class="logos">
+                <span>
+                    <svg width="150" height="150" viewBox="0 0 131 142" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 20C0 8.9543 8.95431 0 20 0H111C122.046 0 131 8.95431 131 20V38H10C4.47716 38 0 33.5228 0 28V20Z" fill="#3CFFE8"/>
+                        <rect x="18" y="52" width="113" height="90" rx="15" fill="#FFE600"/>
+                        </svg>
+                </span>
+                    <div style="padding: 10px;">
+                    <h3 class="heading main title-blox">Colesa Healthcare and Diagnostics</h3>
+                    <p class="title-blox-small">Endocrinology, geriatric and metabolic disorders</p>
+                </div>
+            </div>
+            <div class="oth-options">
+                <ul>
+                    <a class="opts-foot" href="../services/">
+                        <li>Services</li>
+                    </a>
+                    <a class="opts-foot" href="../about_us/">
+                        <li>About Us</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div id="sep-line"></div>
+        <div class="footer-divs">
+            <div class="socials">
+                <div class="det">
+                    <span>
+                        <svg width="30" height="30" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_704_38)">
+                            <path d="M80 16H16C11.6 16 8.04 19.6 8.04 24L8 72C8 76.4 11.6 80 16 80H80C84.4 80 88 76.4 88 72V24C88 19.6 84.4 16 80 16ZM80 32L48 52L16 32V24L48 44L80 24V32Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_704_38">
+                            <rect width="40" height="40" fill="#2457C5"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
+                    <p>colesamedcenter@gmail.com</p>
+                </div>
+                <div class="det">
+                    <span>
+                        <svg width="30" height="30" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_704_41)">
+                            <path d="M26.48 43.16C32.24 54.48 41.52 63.72 52.84 69.52L61.64 60.72C62.72 59.64 64.32 59.28 65.72 59.76C70.2 61.24 75.04 62.04 80 62.04C82.2 62.04 84 63.84 84 66.04V80C84 82.2 82.2 84 80 84C42.44 84 12 53.56 12 16C12 13.8 13.8 12 16 12H30C32.2 12 34 13.8 34 16C34 21 34.8 25.8 36.28 30.28C36.72 31.68 36.4 33.24 35.28 34.36L26.48 43.16Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_704_41">
+                            <rect width="96" height="96" fill="#2457C5"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                    </span>
+                    <p>+234 909 014 4524</p>
+                </div>
+            </div>
+            <p>Address: 31,Soun Ajagungbade Street, Off Ladoke Akintola Avenue,New Bodija, Ibadan, Oyo State, Nigeria</p>
+        </div>
+    </footer>
+</body>
+</html>
