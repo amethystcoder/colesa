@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.logos{display: flex; width: 100%; justify-content: center; padding-top: 20px;}
+
+.heading{color: rgb(0, 61, 165); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}
+
 #css-trigger { font-family: jfe !important; }
 
 #SurveyEngineBody { text-size-adjust: 100%; }
@@ -3148,5 +3152,3 @@ div#P_1631224592482.JFE { overflow: scroll; }
 div::-webkit-scrollbar { width: 0px; height: 0px; }
 
 ::-webkit-scrollbar { display: none; }
-
-html { }
