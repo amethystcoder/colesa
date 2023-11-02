@@ -2,7 +2,9 @@
 
 .logos{display: flex; width: 100%; justify-content: center; padding-top: 20px;}
 
-#NextButton { float: right; background: rgb(44, 112, 184); border-color: rgb(20, 89, 163); border-radius: 0px; box-shadow: none; z-index: 1; color: aliceblue;}
+#NextButton { float: right; border: none; color: rgb(255, 255, 255); font-size: 16px; padding: 8px 20px; border-radius: 4px; cursor: pointer; margin: 20px; text-align: center; text-decoration: none; appearance: none; transition: background 0.3s ease 0s; background-color: rgb(0, 61, 165);}
+
+.Page {height: max-content;}
 
 .heading{color: rgb(0, 61, 165); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 500;}
 
@@ -1152,8 +1154,6 @@ html.MobilePreviewFrame.JFEScope { overflow-y: scroll; }
 .JFEScope .ui-priority-secondary, .JFEScope .ui-widget-content .ui-priority-secondary, .JFEScope .ui-widget-header .ui-priority-secondary { opacity: 0.7; font-weight: 400; }
 
 .JFEScope .ui-state-disabled, .JFEScope .ui-widget-content .ui-state-disabled, .JFEScope .ui-widget-header .ui-state-disabled { opacity: 0.35; background-image: none; }
-
-.JFEScope .ui-state-disabled .ui-icon { }
 
 .JFEScope .ui-menu { list-style: none; padding: 0px; margin: 0px; display: block; outline: 0px; width: 200px; position: absolute; z-index: 1; }
 
@@ -2754,9 +2754,12 @@ a { color: rgb(75, 134, 238); }
 .Skin #Plug a { font-size: 14px; color: rgb(67, 70, 77); text-decoration: none; padding: 12px 24px; }
 
 @media only screen and (min-width: 1281px) {
-  #Page, .JFE, .JFEContent, .Skin, body, html { height: 100%; }
   .Skin #Plug a { color: rgb(255, 255, 255); height: 40px; float: right; background: rgba(61, 61, 68, 0.3); transition: background 0.3s ease 0s; text-align: center; border-radius: 5px 0px 0px; }
   .Skin #Plug a:focus { background: rgb(0, 61, 165); outline: 0px; }
+}
+
+@media only screen and (min-width: 800px) {
+  #NextButton{ margin-right: 250px; }
 }
 
 @media only screen and (min-width: 1281px) and (min-width: 1025px) {

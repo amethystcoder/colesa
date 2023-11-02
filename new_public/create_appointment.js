@@ -1,10 +1,15 @@
 window.addEventListener("load",(ev)=>{
     let Sex = document.getElementsByName("QR~QID5")
+    let Sex_Label = document.getElementsByClassName("sx-radio")
     for (let index = 0; index < Sex.length; index++) {
         Sex[index].addEventListener("click",()=>{
-            if(Sex[index].checked){
-                Sex[index].style.color = "blue"
-                console.log("clack");
+            for (let indx = 0; indx < Sex.length; indx++) {
+                if(Sex[indx].checked){
+                    Sex_Label[indx].style.backgroundColor = "blue"
+                }
+                else{
+                    Sex_Label[indx].style.backgroundColor = "white"
+                }
             }
         })
     }
@@ -12,38 +17,51 @@ window.addEventListener("load",(ev)=>{
     let AppointmentTypeTwo = document.getElementById("QR~QID8~2")
     let AppointmentTypeThree = document.getElementById("QR~QID8~3")
     let AppointmentTypeFour = document.getElementById("QR~QID8~4")
+    let Appointment_Label = document.getElementsByClassName("app-checkbox")
     AppointmentTypeOne.addEventListener("click",()=>{
         if(AppointmentTypeOne.checked){
-            AppointmentTypeOne.style.color = "blue"
-            console.log("clack");
+            Appointment_Label[0].style.backgroundColor = "blue"
+        }
+        else{
+            Appointment_Label[0].style.backgroundColor = "white"
         }
     })
     AppointmentTypeTwo.addEventListener("click",()=>{
         if(AppointmentTypeTwo.checked){
-            AppointmentTypeTwo.style.color = "blue"
-            console.log("clack");
+            Appointment_Label[1].style.backgroundColor = "blue"
+        }
+        else{
+            Appointment_Label[1].style.backgroundColor = "white"
         }
     })
     AppointmentTypeThree.addEventListener("click",()=>{
         if(AppointmentTypeThree.checked){
-            AppointmentTypeThree.style.color = "blue"
-            console.log("clack");
+            Appointment_Label[2].style.backgroundColor = "blue"
+        }
+        else{
+            Appointment_Label[2].style.backgroundColor = "white"
         }
     })
     AppointmentTypeFour.addEventListener("click",()=>{
         if(AppointmentTypeFour.checked){
-            AppointmentTypeFour.style.color = "blue"
-            console.log("clack");
+            Appointment_Label[3].style.backgroundColor = "blue"
+        }
+        else{
+            Appointment_Label[3].style.backgroundColor = "white"
         }
     })
     let FollowupMethod = document.getElementsByName("QR~QID10")
-    let FollowupMethod_value = ""
+    let FollowupMethodRadio = document.getElementsByClassName("flw-radio")
     for (let index = 0; index < FollowupMethod.length; index++) {
         FollowupMethod[index].addEventListener("click",()=>{
-            if(FollowupMethod[index].checked){
-                FollowupMethod[index].style.color = "blue"
-                console.log("clack");
-            }
+            for (let indx = 0; indx < FollowupMethod.length; indx++) {
+                if(FollowupMethod[indx].checked){
+                    FollowupMethodRadio[indx].style.backgroundColor = "blue"
+                }
+                else{
+                    FollowupMethodRadio[indx].style.backgroundColor = "white"
+                }
+        }
         })
     }
 })
@@ -92,15 +110,19 @@ function submitform(){
         }
     }
 
-    console.log(Salutation.value)
-    console.log(LegalName.value);
-    console.log(LegalSurname.value);
-    console.log(Birthdate.value);
-    console.log(sex_value)
-    console.log(Requestername.value);
-    console.log(Mobileno.value);
-    console.log(Email.value);
-    console.log(appointment_type_value);
-    console.log(AppointmentReason.value);
-    console.log(FollowupMethod_value);
+    fetch("",
+    {method:'POST',
+    body:JSON.stringify({
+        salutation:Salutation.value,
+        legal_name:LegalName.value,
+        legal_surname:LegalSurname.value,
+        birthdate:Birthdate.value,
+        sex:sex_value,
+        requester_name:Requestername.value,
+        mobileno:Mobileno.value,
+        email:Email.value,
+        appointment_type:appointment_type_value,
+        appointment_reason:AppointmentReason.value,
+        followupmethod:FollowupMethod_value
+    })})
 }
