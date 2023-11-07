@@ -6,11 +6,11 @@ require 'PHPMailer-master\PHPMailer-master\src\Exception.php';
 require 'PHPMailer-master\PHPMailer-master\src\PHPMailer.php';
 require 'PHPMailer-master\PHPMailer-master\src\SMTP.php';
 
-function send_to_self($name,$email,$message){
+function send_to_self($details){
     $mail = new PHPMailer(true);                              
     $mail->isSMTP();                                     
     $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;           
+    $mail->SMTPAuth = true;       
 
     $mail->Username = 'colesamedcenter@gmail.com';             
     $mail->Password = 'colesamed112';                         
@@ -25,8 +25,16 @@ function send_to_self($name,$email,$message){
     $mail->isHTML(true);                                  
 
     $mail->Subject = "New Message";
-    $mail->Body    = "<b>From".$name."</b><br><br>".$message;
-    $mail->AltBody = $message;
+    $mail->Body    = "<b>From ".$details["salutation"]." ".$details["legal_name"]." ".$details["legal_surname"]."</b><br>"."
+    <h2>Details</h2><br>"."birthdate".$details["birthdate"]."<br>"."sex".$details["sex"].
+    "<br>"."requester_name".$details["requester_name"]."<br>"."mobileno".$details["mobileno"]."<br>"
+    ."email".$details["email"]."<br>"."appointment_type".$details["appointment_type"]."<br>"
+    ."appointment_reason".$details["appointment_reason"]."<br>"."followupmethod".$details["followupmethod"]."<br>";
+    $mail->AltBody = "<b>From ".$details["salutation"]." ".$details["legal_name"]." ".$details["legal_surname"]."</b><br>"."
+    <h2>Details</h2><br>"."birthdate".$details["birthdate"]."<br>"."sex".$details["sex"].
+    "<br>"."requester_name".$details["requester_name"]."<br>"."mobileno".$details["mobileno"]."<br>"
+    ."email".$details["email"]."<br>"."appointment_type".$details["appointment_type"]."<br>"
+    ."appointment_reason".$details["appointment_reason"]."<br>"."followupmethod".$details["followupmethod"]."<br>";
 
     return $mail->send();
 }
@@ -91,7 +99,7 @@ if(isset($_POST)){
 
     if(all_required_values_present($decoded_details)){
         if(filter_var($email,FILTER_VALIDATE_EMAIL)){
-            if(send_to_self($name,$email,$message) && send_to_recipent($name, $email)){
+            if(send_to_self($decoded_details) && send_to_recipent($name, $email)){
                 echo json_encode('sent successfully');
             }
             else{
